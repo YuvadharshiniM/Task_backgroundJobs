@@ -1,0 +1,14 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<h1>{{ title |e }}</h1>
+<h1>{{ doc.title }}</h1>
+
+<p>Author: {{ doc.author | make_upper }}</p>
+
+<p>Route: {{ doc.route }}</p>
+<h2>{{ greet_user("Yuva") }}</h2>
+
+{% endblock %}
+
+<!-- this is a sample default web page template -->

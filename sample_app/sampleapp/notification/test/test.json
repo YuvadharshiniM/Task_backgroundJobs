@@ -1,0 +1,33 @@
+{
+ "attach_files": "",
+ "attach_print": 0,
+ "channel": "System Notification",
+ "condition": "doc.priority==\"High\"",
+ "condition_type": "Python",
+ "creation": "2026-07-23 22:41:37.709460",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Email Notification Doc",
+ "enabled": 1,
+ "event": "Save",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Hiiiii",
+ "message_type": "Plain Text",
+ "minutes_offset": 0,
+ "modified": "2026-07-23 22:41:37.709460",
+ "modified_by": "Administrator",
+ "module": "SampleApp",
+ "name": "test",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_role": "System Manager"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "sender_email": "",
+ "subject": "alert"
+}

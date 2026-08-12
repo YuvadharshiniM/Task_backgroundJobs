@@ -1,0 +1,1 @@
+alert("Practice js loaded !");

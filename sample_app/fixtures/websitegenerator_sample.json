@@ -1,0 +1,29 @@
+[
+ {
+  "author": "XYZ",
+  "docstatus": 0,
+  "doctype": "websiteGenerator_sample",
+  "modified": "2026-08-06 14:35:15.895712",
+  "name": "3nndsf0193",
+  "route": "DEF",
+  "title": "ABC"
+ },
+ {
+  "author": "James",
+  "docstatus": 0,
+  "doctype": "websiteGenerator_sample",
+  "modified": "2026-08-06 14:36:06.113936",
+  "name": "47dtsrj0au",
+  "route": "learning-python",
+  "title": "Learning Python"
+ },
+ {
+  "author": "Alex Michaelides",
+  "docstatus": 0,
+  "doctype": "websiteGenerator_sample",
+  "modified": "2026-08-07 12:32:49.331453",
+  "name": "silent-patient",
+  "route": "silent-patient",
+  "title": "silent patient "
+ }
+]

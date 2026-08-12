@@ -1,0 +1,74 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "field:dept_name",
+ "creation": "2026-07-22 16:34:14.526660",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "dept_name",
+  "dept_code",
+  "descriptions",
+  "active_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "dept_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Dept name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "dept_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Dept code",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "active_status",
+   "fieldtype": "Check",
+   "label": "Active"
+  },
+  {
+   "fieldname": "descriptions",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-29 18:11:09.657146",
+ "modified_by": "Administrator",
+ "module": "SampleApp",
+ "name": "Hospital Dept",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

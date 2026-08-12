@@ -1,0 +1,431 @@
+# Translations template for SampleApp.
+# Copyright (C) 2026 Yuvadharshini
+# This file is distributed under the same license as the SampleApp project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: SampleApp VERSION\n"
+"Report-Msgid-Bugs-To: yuvadharshinim05@gmail.com\n"
+"POT-Creation-Date: 2026-08-10 06:01+0000\n"
+"PO-Revision-Date: 2026-08-10 06:01+0000\n"
+"Last-Translator: yuvadharshinim05@gmail.com\n"
+"Language-Team: yuvadharshinim05@gmail.com\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#. Introduction text of the practice-web-form Web Form
+#: sample_app/sampleapp/web_form/practice_web_form/practice_web_form.json
+msgid "<div class=\"ql-editor read-mode\"><p>Sample Intro</p></div>"
+msgstr ""
+
+#. Label of the age (Int) field in DocType 'Client script Practice'
+#. Label of the age (Int) field in DocType 'Patient'
+#. Label of the age (Int) field in DocType 'sample1'
+#: sample_app/sampleapp/doctype/client_script_practice/client_script_practice.json
+#: sample_app/sampleapp/doctype/patient/patient.json
+#: sample_app/sampleapp/doctype/sample1/sample1.json
+msgid "Age"
+msgstr ""
+
+#. Label of the date_time (Datetime) field in DocType 'Appointment'
+#: sample_app/sampleapp/doctype/appointment/appointment.json
+msgid "Appointmant Date&Time"
+msgstr ""
+
+#. Name of a DocType
+#. Label of the appointment (Link) field in DocType 'Meedical Record'
+#: sample_app/sampleapp/doctype/appointment/appointment.json
+#: sample_app/sampleapp/doctype/meedical_record/meedical_record.json
+msgid "Appointment"
+msgstr ""
+
+#. Label of the availablity (Check) field in DocType 'Doctor'
+#: sample_app/sampleapp/doctype/doctor/doctor.json
+msgid "Available"
+msgstr ""
+
+#. Label of the available_stock (Int) field in DocType 'Medicine'
+#: sample_app/sampleapp/doctype/medicine/medicine.json
+msgid "Available stock"
+msgstr ""
+
+#. Label of the blood_group (Data) field in DocType 'Patient'
+#: sample_app/sampleapp/doctype/patient/patient.json
+msgid "Blood Group"
+msgstr ""
+
+#. Name of a DocType
+#: sample_app/sampleapp/doctype/book_issue/book_issue.json
+msgid "Book Issue"
+msgstr ""
+
+#. Label of the book_name (Data) field in DocType 'Book Issue'
+#: sample_app/sampleapp/doctype/book_issue/book_issue.json
+msgid "Book Name"
+msgstr ""
+
+#. Label of the certifications (Text Editor) field in DocType
+#. 'PrintFormatePractice'
+#: sample_app/sampleapp/doctype/printformatepractice/printformatepractice.json
+msgid "Certifications"
+msgstr ""
+
+#. Name of a DocType
+#: sample_app/sampleapp/doctype/client_script_practice/client_script_practice.json
+msgid "Client script Practice"
+msgstr ""
+
+#. Label of the complaint (Text Editor) field in DocType 'Is Tree'
+#: sample_app/sampleapp/doctype/is_tree/is_tree.json
+msgid "Complaint"
+msgstr ""
+
+#. Label of the consultaion_fee (Currency) field in DocType 'Hospital Ivoice'
+#: sample_app/sampleapp/doctype/hospital_ivoice/hospital_ivoice.json
+msgid "Consultaion Fee"
+msgstr ""
+
+#. Label of the consultaion_fee (Currency) field in DocType 'Doctor'
+#: sample_app/sampleapp/doctype/doctor/doctor.json
+msgid "Consultation Fee"
+msgstr ""
+
+#. Label of the dob (Date) field in DocType 'Patient'
+#. Label of the dob (Date) field in DocType 'PrintFormatePractice'
+#: sample_app/sampleapp/doctype/patient/patient.json
+#: sample_app/sampleapp/doctype/printformatepractice/printformatepractice.json
+msgid "DOB"
+msgstr ""
+
+#. Label of the dept (Link) field in DocType 'Appointment'
+#. Label of the dept (Link) field in DocType 'Doctor'
+#. Label of the dept (Data) field in DocType 'NotNullable Doc'
+#: sample_app/sampleapp/doctype/appointment/appointment.json
+#: sample_app/sampleapp/doctype/doctor/doctor.json
+#: sample_app/sampleapp/doctype/notnullable_doc/notnullable_doc.json
+msgid "Dept"
+msgstr ""
+
+#. Label of the dept_code (Data) field in DocType 'Hospital Dept'
+#: sample_app/sampleapp/doctype/hospital_dept/hospital_dept.json
+msgid "Dept code"
+msgstr ""
+
+#. Label of the dept_name (Data) field in DocType 'Hospital Dept'
+#: sample_app/sampleapp/doctype/hospital_dept/hospital_dept.json
+msgid "Dept name"
+msgstr ""
+
+#. Name of a DocType
+#: sample_app/sampleapp/doctype/doctor/doctor.json
+msgid "Doctor"
+msgstr ""
+
+#. Label of the doctor_name (Data) field in DocType 'Doctor'
+#. Label of the doctor_name (Link) field in DocType 'Meedical Record'
+#: sample_app/sampleapp/doctype/doctor/doctor.json
+#: sample_app/sampleapp/doctype/meedical_record/meedical_record.json
+msgid "Doctor Name"
+msgstr ""
+
+#. Label of the doctor_name (Link) field in DocType 'Appointment'
+#: sample_app/sampleapp/doctype/appointment/appointment.json
+msgid "Doctor Name "
+msgstr ""
+
+#. Label of the doctor_photo (Attach Image) field in DocType 'Doctor'
+#: sample_app/sampleapp/doctype/doctor/doctor.json
+msgid "Doctor Photo"
+msgstr ""
+
+#. Label of the doctor_name (Link) field in DocType 'Hospital Ivoice'
+#: sample_app/sampleapp/doctype/hospital_ivoice/hospital_ivoice.json
+msgid "Doctor name"
+msgstr ""
+
+#. Name of a DocType
+#: sample_app/sampleapp/doctype/email_notification_doc/email_notification_doc.json
+msgid "Email Notification Doc"
+msgstr ""
+
+#. Option for the 'Priority' (Select) field in DocType 'Appointment'
+#: sample_app/sampleapp/doctype/appointment/appointment.json
+msgid "Emergency"
+msgstr ""
+
+#. Label of the employee_id (Data) field in DocType 'PrintFormatePractice'
+#: sample_app/sampleapp/doctype/printformatepractice/printformatepractice.json
+msgid "EmployeeID"
+msgstr ""
+
+#. Label of the f_name (Data) field in DocType 'Is Tree'
+#: sample_app/sampleapp/doctype/is_tree/is_tree.json
+msgid "FName"
+msgstr ""
+
+#: sample_app/utils.py:35
+msgid "Hello Yuva"
+msgstr ""
+
+#. Name of a DocType
+#: sample_app/sampleapp/doctype/hospital_dept/hospital_dept.json
+msgid "Hospital Dept"
+msgstr ""
+
+#. Name of a DocType
+#: sample_app/sampleapp/doctype/hospital_ivoice/hospital_ivoice.json
+msgid "Hospital Ivoice"
+msgstr ""
+
+#. Label of the issue_date (Date) field in DocType 'Book Issue'
+#: sample_app/sampleapp/doctype/book_issue/book_issue.json
+msgid "Issue Date"
+msgstr ""
+
+#. Label of the ivoice_data (Date) field in DocType 'Hospital Ivoice'
+#: sample_app/sampleapp/doctype/hospital_ivoice/hospital_ivoice.json
+msgid "Ivoice Data"
+msgstr ""
+
+#. Label of the joining_date (Date) field in DocType 'PrintFormatePractice'
+#: sample_app/sampleapp/doctype/printformatepractice/printformatepractice.json
+msgid "Joining Date"
+msgstr ""
+
+#. Name of a DocType
+#: sample_app/sampleapp/doctype/librery_member/librery_member.json
+msgid "Librery member"
+msgstr ""
+
+#. Label of the manufacturer (Data) field in DocType 'Medicine'
+#: sample_app/sampleapp/doctype/medicine/medicine.json
+msgid "Manufacturer"
+msgstr ""
+
+#. Name of a DocType
+#: sample_app/sampleapp/doctype/medicine/medicine.json
+msgid "Medicine"
+msgstr ""
+
+#. Label of the medicine_charges (Currency) field in DocType 'Hospital Ivoice'
+#: sample_app/sampleapp/doctype/hospital_ivoice/hospital_ivoice.json
+msgid "Medicine Charges"
+msgstr ""
+
+#. Label of the medicine_name (Data) field in DocType 'Medicine'
+#: sample_app/sampleapp/doctype/medicine/medicine.json
+msgid "Medicine Name"
+msgstr ""
+
+#. Name of a DocType
+#: sample_app/sampleapp/doctype/meedical_record/meedical_record.json
+msgid "Meedical Record"
+msgstr ""
+
+#. Label of the member_name (Link) field in DocType 'Book Issue'
+#: sample_app/sampleapp/doctype/book_issue/book_issue.json
+msgid "Member Name"
+msgstr ""
+
+#. Label of the member_name (Data) field in DocType 'Librery member'
+#: sample_app/sampleapp/doctype/librery_member/librery_member.json
+msgid "Member name"
+msgstr ""
+
+#. Option for the 'Priority' (Select) field in DocType 'Appointment'
+#: sample_app/sampleapp/doctype/appointment/appointment.json
+msgid "Normal"
+msgstr ""
+
+#. Name of a DocType
+#: sample_app/sampleapp/doctype/notnullable_doc/notnullable_doc.json
+msgid "NotNullable Doc"
+msgstr ""
+
+#. Label of the old_parent (Link) field in DocType 'Is Tree'
+#: sample_app/sampleapp/doctype/is_tree/is_tree.json
+msgid "Old Parent"
+msgstr ""
+
+#. Option for the 'Gender' (Select) field in DocType 'Patient'
+#. Option for the 'Gender' (Select) field in DocType 'PrintFormatePractice'
+#: sample_app/sampleapp/doctype/patient/patient.json
+#: sample_app/sampleapp/doctype/printformatepractice/printformatepractice.json
+msgid "Others"
+msgstr ""
+
+#. Option for the 'Payment Status' (Select) field in DocType 'Hospital Ivoice'
+#: sample_app/sampleapp/doctype/hospital_ivoice/hospital_ivoice.json
+msgid "Paid"
+msgstr ""
+
+#. Label of the parent_is_tree (Link) field in DocType 'Is Tree'
+#: sample_app/sampleapp/doctype/is_tree/is_tree.json
+msgid "Parent Is Tree"
+msgstr ""
+
+#. Option for the 'Payment Status' (Select) field in DocType 'Hospital Ivoice'
+#: sample_app/sampleapp/doctype/hospital_ivoice/hospital_ivoice.json
+msgid "Partially paid"
+msgstr ""
+
+#. Name of a DocType
+#: sample_app/sampleapp/doctype/patient/patient.json
+msgid "Patient"
+msgstr ""
+
+#. Label of the patient_name (Link) field in DocType 'Appointment'
+#. Label of the patient_name (Link) field in DocType 'Hospital Ivoice'
+#. Label of the patient_name (Data) field in DocType 'Patient'
+#: sample_app/sampleapp/doctype/appointment/appointment.json
+#: sample_app/sampleapp/doctype/hospital_ivoice/hospital_ivoice.json
+#: sample_app/sampleapp/doctype/patient/patient.json
+msgid "Patient Name"
+msgstr ""
+
+#. Label of the patient_name (Link) field in DocType 'Meedical Record'
+#: sample_app/sampleapp/doctype/meedical_record/meedical_record.json
+msgid "Patient Name "
+msgstr ""
+
+#. Label of the payment_status (Select) field in DocType 'Hospital Ivoice'
+#: sample_app/sampleapp/doctype/hospital_ivoice/hospital_ivoice.json
+msgid "Payment Status"
+msgstr ""
+
+#. Label of the photo (Attach Image) field in DocType 'PrintFormatePractice'
+#: sample_app/sampleapp/doctype/printformatepractice/printformatepractice.json
+msgid "Photo"
+msgstr ""
+
+#. Title of the practice-web-form Web Form
+#: sample_app/sampleapp/web_form/practice_web_form/practice_web_form.json
+msgid "Practice web Form"
+msgstr ""
+
+#. Name of a DocType
+#: sample_app/sampleapp/doctype/printformatepractice/printformatepractice.json
+msgid "PrintFormatePractice"
+msgstr ""
+
+#. Label of the projects (Text Editor) field in DocType 'PrintFormatePractice'
+#: sample_app/sampleapp/doctype/printformatepractice/printformatepractice.json
+msgid "Projects "
+msgstr ""
+
+#. Label of the qualification (Data) field in DocType 'Doctor'
+#: sample_app/sampleapp/doctype/doctor/doctor.json
+msgid "Qualification"
+msgstr ""
+
+#. Label of the salary (Int) field in DocType 'PrintFormatePractice'
+#: sample_app/sampleapp/doctype/printformatepractice/printformatepractice.json
+msgid "Salary"
+msgstr ""
+
+#. Label of the custom_sample_app (Data) field in DocType 'Event Notifications'
+#: sample_app/sampleapp/custom/event_notifications.json
+msgid "Sample App"
+msgstr ""
+
+#. Name of a DocType
+#: sample_app/sampleapp/doctype/singledoc/singledoc.json
+msgid "Singledoc"
+msgstr ""
+
+#. Label of the specialization (Data) field in DocType 'Doctor'
+#: sample_app/sampleapp/doctype/doctor/doctor.json
+msgid "Specialization"
+msgstr ""
+
+#. Success title of the practice-web-form Web Form
+#: sample_app/sampleapp/web_form/practice_web_form/practice_web_form.json
+msgid "Successfully Submitted"
+msgstr ""
+
+#. Name of a DocType
+#: sample_app/sampleapp/doctype/test2/test2.json
+msgid "Test2"
+msgstr ""
+
+#. Success message of the practice-web-form Web Form
+#: sample_app/sampleapp/web_form/practice_web_form/practice_web_form.json
+msgid "Thankyou for your Response !!!!"
+msgstr ""
+
+#. Label of the total_amount (Currency) field in DocType 'Hospital Ivoice'
+#: sample_app/sampleapp/doctype/hospital_ivoice/hospital_ivoice.json
+msgid "Total Amount"
+msgstr ""
+
+#. Label of the treatment_notes (Small Text) field in DocType 'Meedical Record'
+#: sample_app/sampleapp/doctype/meedical_record/meedical_record.json
+msgid "Treatment Notes"
+msgstr ""
+
+#. Label of the unit_price (Currency) field in DocType 'Medicine'
+#: sample_app/sampleapp/doctype/medicine/medicine.json
+msgid "Unit Price"
+msgstr ""
+
+#. Option for the 'Payment Status' (Select) field in DocType 'Hospital Ivoice'
+#: sample_app/sampleapp/doctype/hospital_ivoice/hospital_ivoice.json
+msgid "Unpaid"
+msgstr ""
+
+#. Option for the 'Priority' (Select) field in DocType 'Appointment'
+#: sample_app/sampleapp/doctype/appointment/appointment.json
+msgid "Urgent"
+msgstr ""
+
+#. Name of a DocType
+#: sample_app/sampleapp/doctype/worrkflow_practice/worrkflow_practice.json
+msgid "Worrkflow Practice"
+msgstr ""
+
+#. Label of the years_of_experience (Int) field in DocType
+#. 'PrintFormatePractice'
+#: sample_app/sampleapp/doctype/printformatepractice/printformatepractice.json
+msgid "Years of experience"
+msgstr ""
+
+#. Label of the name1 (Data) field in DocType 'sample1'
+#. Label of the name1 (Date) field in DocType 'Singledoc'
+#: sample_app/sampleapp/doctype/sample1/sample1.json
+#: sample_app/sampleapp/doctype/singledoc/singledoc.json
+msgid "name"
+msgstr ""
+
+#. Option for the 'Gender' (Select) field in DocType 'Doctor'
+#: sample_app/sampleapp/doctype/doctor/doctor.json
+msgid "others"
+msgstr ""
+
+#. Label of the custom_sample (Data) field in DocType 'Event Notifications'
+#: sample_app/sampleapp/custom/event_notifications.json
+msgid "sample"
+msgstr ""
+
+#. Name of a DocType
+#: sample_app/sampleapp/doctype/sample1/sample1.json
+msgid "sample1"
+msgstr ""
+
+#. Label of the test (Link) field in DocType 'test3'
+#: sample_app/sampleapp/doctype/test3/test3.json
+msgid "test"
+msgstr ""
+
+#. Name of a DocType
+#: sample_app/sampleapp/doctype/test3/test3.json
+msgid "test3"
+msgstr ""
+
+#. Name of a DocType
+#: sample_app/sampleapp/doctype/websitegenerator_sample/websitegenerator_sample.json
+msgid "websiteGenerator_sample"
+msgstr ""
+
