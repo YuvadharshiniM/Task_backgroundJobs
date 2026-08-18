@@ -1,14 +1,17 @@
 import frappe
 
+logger = frappe.logger("uninstall")
+logger.setLevel("INFO")
+
 def before_migrate():
-    frappe.logger().info("===== BEFORE MIGRATE TEST =====")
+    logger.info("===== BEFORE MIGRATE TEST =====")
     print("BEFORE MIGRATE EXECUTED")
 
 
 def after_migrate():
-    frappe.logger().info("===== AFTER MIGRATE TEST =====")
+    logger.info("===== AFTER MIGRATE TEST =====")
     print("AFTER MIGRATE EXECUTED")
 
 
-def before_tests():
-    print("🔥 BEFORE TESTS HOOK IS RUNNING!")
+# def before_tests():
+#     print("BEFORE TESTS HOOK IS RUNNING!")

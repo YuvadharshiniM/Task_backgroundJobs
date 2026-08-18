@@ -49,6 +49,7 @@ scheduler_events = {
 # webform_include_js = {"doctype": "public/js/doctype.js"}
 # webform_include_css = {"doctype": "public/css/doctype.css"}
 
+webform_include_css = {"ToDo": "public/css/custom_todo.css"}
 # include js in page
 # page_js = {"page" : "public/js/file.js"}
 
@@ -85,7 +86,6 @@ scheduler_events = {
 
 # Jinja
 # ----------
-
 # add methods and filters to jinja environment
 jinja = {
     "methods": "sample_app.utils",
@@ -102,8 +102,8 @@ after_install = "sample_app.install.after_install"
 # Uninstallation
 # ------------
 
-# before_uninstall = "sample_app.uninstall.before_uninstall"
-# after_uninstall = "sample_app.uninstall.after_uninstall"
+before_uninstall = "sample_app.uninstall.before_uninstall"
+after_uninstall = "sample_app.uninstall.after_uninstall"
 
 # Integration Setup
 # ------------------
@@ -131,19 +131,19 @@ after_build = "sample_app.build.after_build"
 # ------------------
 # See frappe.core.notifications.get_notification_config
 
-notification_config = "sample_app.notification.get_notification_config" #not working 
+notification_config = "sample_app.notification.get_notification_config"
 
 # Permissions
 # -----------
 # Permissions evaluated in scripted ways
 
 # permission_query_conditions = {
-# 	"Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
+#     "Permission Test": "sample_app.permissions.permission_test_query_conditions"
 # }
-#
-# has_permission = {
-# 	"Event": "frappe.desk.doctype.event.event.has_permission",
-# }
+
+has_permission = {
+    "Permission Test": "sample_app.permissions.permission_test_has_permission",
+}
 
 # Document Events
 # ---------------
@@ -178,13 +178,13 @@ notification_config = "sample_app.notification.get_notification_config" #not wor
 # 	],
 # }
 
-# Testing
+# Testing 
 # -------
 
 # before_tests = "sample_app.install.before_tests"
 
 # Extend DocType Class
-# ------------------------------
+# ------------------------------#not done 
 #
 # Specify custom mixins to extend the standard doctype controller.
 # extend_doctype_class = {
@@ -193,7 +193,12 @@ notification_config = "sample_app.notification.get_notification_config" #not wor
 
 # Overriding Methods
 # ------------------------------
-#
+
+override_whitelisted_methods = {
+    "frappe.desk.doctype.event.event.get_events":
+        "sample_app.event.get_events"
+}
+
 # override_whitelisted_methods = {
 # 	"frappe.desk.doctype.event.event.get_events": "sample_app.event.get_events"
 # }
@@ -212,12 +217,12 @@ notification_config = "sample_app.notification.get_notification_config" #not wor
 # Ignore links to specified DocTypes when deleting documents
 # -----------------------------------------------------------
 
-ignore_links_on_delete = ["test3"]
+ignore_links_on_delete = ["testlink2"]
 
 # Request Events
 # ----------------
-# before_request = ["sample_app.utils.before_request"]
-# after_request = ["sample_app.utils.after_request"]
+before_request = ["sample_app.utils.before_request"]
+after_request = ["sample_app.utils.after_request"]
 
 # Job Events
 # ----------
@@ -277,15 +282,18 @@ ignore_translatable_strings_from = ["frappe"]
 
 export_python_type_annotations = True
 
-# doc_events = {
-#     "ToDo": {
-#         "before_insert": "sample_app.events.before_insert_test",
-#         "before_validate": "sample_app.events.before_validate_test"
-#     },
-#     "Category": {
-#         "before_insert": "sample_app.events.before_insert_test"
-#     }
-# }
+doc_events = {
+    "ToDo": {
+        "validate": "sample_app.api.customlogic.todo_validate" 
+    },
+    "Category": {
+        "before_insert": "sample_app.events.before_insert_test"
+    }
+}
+
+# on_login = "app.overrides.successful_login"
+# on_session_creation = "app.overrides.allocate_free_credits"
+# on_logout = "app.overrides.clear_user_cache"
 
 #app_include_css = "/assets/sample_app/css/sample_app.css"
 #app_include_js = "/assets/sample_app/js/Sample.js"
@@ -297,9 +305,17 @@ webform_include_js = {
 
 page_js = {"sample3" : "public/js/practice.js"}
 
-#app_include_icons = "sample_app\sample_app\public\icons\sample.svg"########################
+#app_include_icons = "sample_app\sample_app\public\icons\sample.svg"#####doubt
 
 website_generators = ["websiteGenerator_sample"]
+
+# website_catch_all = "not_found"
+
+# website_path_resolver = "sample_app.website.custom_website_path_resolver"
+
+clear_cache = "sample_app.cache.clear_cache"
+
+website_clear_cache = "sample_app.cache.clear_website_cache"
 
 sounds = [
     {
@@ -315,10 +331,28 @@ doctype_js = {
 }
 
 fixtures = [
-    "websiteGenerator_sample"
+    "websiteGenerator_sample",
+    "Server Script",
+    "Notification"
 ]
 
 before_migrate = "sample_app.migrate.before_migrate"
 after_migrate = "sample_app.migrate.after_migrate"
 
-before_tests = "sample_app.migrate.before_tests"
+before_tests = "sample_app.migrate.before_tests"#not done
+
+before_write_file = "sample_app.overrides.file.before_write"
+write_file = "sample_app.overrides.file.write_file"
+
+extend_doctype_class = {
+    "Address": ["sample_app.address.AddressMixin"]
+}
+# extend_doctype_class = {
+#     "Address": [
+#         "app.extensions.address.GeocodingMixin",
+#         "app.extensions.common.ValidationMixin"
+#     ],
+#     "Contact": [
+#         "app.extensions.common.ValidationMixin"
+#     ]
+# }

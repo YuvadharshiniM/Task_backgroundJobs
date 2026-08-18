@@ -1,11 +1,20 @@
 [
  {
+  "author": "def",
+  "docstatus": 0,
+  "doctype": "websiteGenerator_sample",
+  "modified": "2026-08-09 12:26:06.265107",
+  "name": "abc",
+  "route": "abc",
+  "title": "abc"
+ },
+ {
   "author": "XYZ",
   "docstatus": 0,
   "doctype": "websiteGenerator_sample",
   "modified": "2026-08-06 14:35:15.895712",
   "name": "3nndsf0193",
-  "route": "DEF",
+  "route": "abc",
   "title": "ABC"
  },
  {
@@ -14,7 +23,7 @@
   "doctype": "websiteGenerator_sample",
   "modified": "2026-08-06 14:36:06.113936",
   "name": "47dtsrj0au",
-  "route": "learning-python",
+  "route": "learning_python",
   "title": "Learning Python"
  },
  {
@@ -23,7 +32,7 @@
   "doctype": "websiteGenerator_sample",
   "modified": "2026-08-07 12:32:49.331453",
   "name": "silent-patient",
-  "route": "silent-patient",
+  "route": "silent_patient_",
   "title": "silent patient "
  }
 ]

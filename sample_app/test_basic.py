@@ -1,3 +1,7 @@
-def test_addition():
-    print("🔥🔥 MY TEST FUNCTION IS RUNNING 🔥🔥")
-    assert 2 + 3 == 5
+import unittest
+
+
+class TestBasic(unittest.TestCase):
+
+    def test_addition(self):
+        self.assertEqual(2 + 3, 5)

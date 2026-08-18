@@ -1,0 +1,7 @@
+.web-form {
+    background: yellow !important;
+}
+
+.web-form .form-control {
+    background: red !important;
+}
