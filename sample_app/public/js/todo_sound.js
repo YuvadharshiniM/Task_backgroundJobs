@@ -1,5 +1,5 @@
 frappe.ui.form.on("ToDo", {
-    after_save(frm) {
+    before_save(frm) {
         frappe.utils.play_sound("ping");
     }
 });

@@ -6,11 +6,16 @@ app_email = "yuvadharshinim05@gmail.com"
 app_license = "mit"
 
 
+test_string = "This is a test string"
+test_dict = {"name":"Yuvadharshini"}
+
 scheduler_events = {
 	"daily": [
 		"sample_app.tasks.daily_maintenance"
 	]
 }
+
+app_include_js = "/assets/sample_app/js/practice.js"
 
 # app_include_js = "custom.bundle.js"
 
@@ -226,8 +231,8 @@ after_request = ["sample_app.utils.after_request"]
 
 # Job Events
 # ----------
-before_job = ["sample_app.utils.before_job"]
-after_job = ["sample_app.utils.after_job"]
+# before_job = ["sample_app.utils.before_job"]
+# after_job = ["sample_app.utils.after_job"]
 
 
 # User Data Protection #doubt
@@ -341,8 +346,8 @@ after_migrate = "sample_app.migrate.after_migrate"
 
 before_tests = "sample_app.migrate.before_tests"#not done
 
-before_write_file = "sample_app.overrides.file.before_write"
-write_file = "sample_app.overrides.file.write_file"
+# before_write_file = "sample_app.overrides.file.before_write"
+# write_file = "sample_app.overrides.file.write_file"
 
 extend_doctype_class = {
     "Address": ["sample_app.address.AddressMixin"]
