@@ -35,23 +35,24 @@ def test_translation():
     return _("Hello Yuva")
 
 
-# from frappe.utils.pdf import get_pdf
-# @frappe.whitelist()
-# def test_get_pdf():
-#     html = """
-#         <html>
-#             <body>
-#                 <h1>Test PDF</h1>
-#                 <p>This PDF was generated using Frappe get_pdf().</p>
-#             </body>
-#         </html>
-#     """
 
-#     pdf = get_pdf(html)
+from frappe.utils.pdf import get_pdf
+@frappe.whitelist()
+def test_get_pdf():
+    html = """
+        <html>
+            <body>
+                <h1>Test PDF</h1>
+                <p>This PDF was generated using Frappe get_pdf().</p>
+            </body>
+        </html>
+    """
 
-#     frappe.local.response.filename = "test.pdf"
-#     frappe.local.response.filecontent = pdf
-#     frappe.local.response.type = "download"
+    pdf = get_pdf(html)
+
+    frappe.local.response.filename = "test.pdf"
+    frappe.local.response.filecontent = pdf
+    frappe.local.response.type = "download"
 
 
 
