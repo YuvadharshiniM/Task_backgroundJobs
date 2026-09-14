@@ -341,10 +341,10 @@ fixtures = [
     "Notification"
 ]
 
-before_migrate = "sample_app.migrate.before_migrate"
-after_migrate = "sample_app.migrate.after_migrate"
+# before_migrate = "sample_app.migrate.before_migrate"
+# after_migrate = "sample_app.migrate.after_migrate"
 
-before_tests = "sample_app.migrate.before_tests"#not done
+# before_tests = "sample_app.migrate.before_tests"#not done
 
 # before_write_file = "sample_app.overrides.file.before_write"
 # write_file = "sample_app.overrides.file.write_file"
