@@ -1,0 +1,29 @@
+```html
+<div class="print-format">
+
+    <h2>TaskReport</h2>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Customer Name</th>
+                <th>Company Type</th>
+                <th>Customer Group</th>
+                <th>Territory</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <% data.forEach(function(row) { %>
+                <tr>
+                    <td><%= row.customer_name %></td>
+                    <td><%= row.company_type %></td>
+                    <td><%= row.customer_group %></td>
+                    <td><%= row.territory %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+
+</div>
+```
