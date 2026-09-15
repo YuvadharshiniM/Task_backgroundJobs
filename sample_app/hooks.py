@@ -338,7 +338,8 @@ doctype_js = {
 fixtures = [
     "websiteGenerator_sample",
     "Server Script",
-    "Notification"
+    "Notification",
+    "Client Script"
 ]
 
 # before_migrate = "sample_app.migrate.before_migrate"

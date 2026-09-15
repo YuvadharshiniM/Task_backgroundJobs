@@ -1,0 +1,68 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Client script Practice",
+  "enabled": 1,
+  "modified": "2026-07-22 12:35:33.057869",
+  "module": "SampleApp",
+  "name": "Client Script Practice",
+  "script": "frappe.ui.form.on(\"Client script Practice\", {\r\n    refresh(frm) {\r\n        frappe.msgprint(\"Client Script Loaded\");\r\n    }\r\n});",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Appointment",
+  "enabled": 1,
+  "modified": "2026-07-23 12:07:30.376891",
+  "module": "SampleApp",
+  "name": "Patient Past Date",
+  "script": "frappe.ui.form.on(\"Appointment\", {\n    date_time(frm) {\n        if (\n            frm.doc.date_time &&\n            frm.doc.date_time < frappe.datetime.now_datetime()\n        ) {\n            frappe.msgprint(\"Appointment date cannot be in the past.\");\n            frm.set_value(\"date_time\", null);\n        }\n    }\n});",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Appointment",
+  "enabled": 1,
+  "modified": "2026-07-23 12:45:06.072983",
+  "module": "SampleApp",
+  "name": "Doctor Availablity",
+  "script": "frappe.ui.form.on(\"Appointment\", {\r\n    setup(frm) {\r\n        frm.set_query(\"doctor_name\", function () {\r\n            return {\r\n                filters: {\r\n                    availability: 1\r\n                }\r\n            };\r\n        });\r\n    }\r\n});",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Customers",
+  "enabled": 1,
+  "modified": "2026-09-14 18:52:17.320190",
+  "module": null,
+  "name": "sample_task",
+  "script": "frappe.ui.form.on('Customers', {\r\n    setup: function(frm) {\r\n        frm.set_query(\"territory\", function() {\r\n            return {\r\n                filters: {\r\n                    \"territory_name\": \"India\" // ensure exact field name in Territory\r\n                }\r\n            };\r\n        });\r\n    }\r\n});",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Sales Order",
+  "enabled": 1,
+  "modified": "2026-09-14 18:53:48.403453",
+  "module": null,
+  "name": "sample1",
+  "script": "frappe.ui.form.on('Sales Order', { setup: function(frm) { frm.set_query(\"customer\", function() { return { filters: { \"status\": \"Active\" } }; }); } }); ",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "User",
+  "enabled": 1,
+  "modified": "2026-09-15 11:09:58.931627",
+  "module": "SampleApp",
+  "name": "Send Welcome Email",
+  "script": "frappe.ui.form.on('User', {\r\n    refresh(frm) {\r\n        frm.add_custom_button('Send Welcome Email', function() {\r\n            frappe.msgprint('Email Sent!');\r\n        }, 'Actions');\r\n    }\r\n});",
+  "view": "Form"
+ }
+]
